@@ -69,7 +69,7 @@ fn load_mem(m: &mut Vec<String>) {
 }
 
 fn read_input() -> BufReader<std::fs::File> {
-    let file_in = File::open("./input.txt").unwrap();
+    let file_in = File::open("./etc/two.txt").unwrap();
     let file_reader = BufReader::new(file_in);
     return file_reader
 }
