@@ -3,7 +3,7 @@ use std::io::prelude::*;
 use std::io::BufReader;
 use std::fs::File;
 
-static INPUT_FILE: &str = "../input.txt";
+static INPUT_FILE: &str = "./input.txt";
 
 fn main() {
     println!("{}", INPUT_FILE);
