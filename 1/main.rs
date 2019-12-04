@@ -3,17 +3,11 @@ use std::io::prelude::*;
 use std::io::BufReader;
 use std::fs::File;
 
-static INPUT_FILE: &str = "./input.txt";
-
-fn main() {
-    println!("{}", INPUT_FILE);
-    let file_in = File::open(INPUT_FILE).unwrap();
-    let file_reader = BufReader::new(file_in);
-
+fn main() {    
     let mut total_mass = 0.0;
     let mut total_fuel = 0.0;
 
-    for line_r in file_reader.lines() {
+    for line_r in read_input().lines() {
         let line = line_r.unwrap();
         let mass = line.parse::<f32>().unwrap();    
         total_mass += mass;
@@ -23,6 +17,12 @@ fn main() {
 
     println!("Total mass: {}", total_mass);
     println!("Total fuel: {}", total_fuel);
+}
+
+fn read_input() -> BufReader<std::fs::File> {
+    let file_in = File::open("./input.txt").unwrap();
+    let file_reader = BufReader::new(file_in);
+    return file_reader
 }
 
 // calc fuel for mass
