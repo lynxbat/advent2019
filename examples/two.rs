@@ -1,4 +1,4 @@
-// Advent of Code - Day 1
+// Advent of Code - Day 2
 use std::io::prelude::*;
 use std::io::BufReader;
 use std::fs::File;
