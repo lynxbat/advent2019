@@ -20,7 +20,7 @@ fn main() {
 }
 
 fn read_input() -> BufReader<std::fs::File> {
-    let file_in = File::open("./input.txt").unwrap();
+    let file_in = File::open("./etc/one.txt").unwrap();
     let file_reader = BufReader::new(file_in);
     return file_reader
 }
