@@ -193,14 +193,12 @@ fn main() {
                                     let y = s2.y1;
                                     // println!("      S1 Vertical line {}", s1);
                                     // println!("              S2 Horizontal line {}", s2);
-                                    // println!("                  INTERSECTION: {},{}", s1.x1, s2.y1);   
-                                    // distance to intersection
-                                    // Get the total distance before this segment
+                                    // println!("                  INTERSECTION: {},{}", s1.x1, s2.y1);                                       
+                                    
                                     let mut idist = s1.total_distance + s2.total_distance;
                                     // println!(" --- total distance: {}", idist);
 
-                                    // println!(" --- s1: y1:{} y2:{} y:{}", s1.y1, s1.y2, y);
-                                    // Now add to the intersection only                                   
+                                    // println!(" --- s1: y1:{} y2:{} y:{}", s1.y1, s1.y2, y);                                                                   
                                     let d1 = match s1.direction {
                                         Direction::Up => (s1.y1 - y).abs(),
                                         Direction::Down => (s1.y2 - y).abs(),
@@ -230,12 +228,10 @@ fn main() {
                                     // println!("      S1 Horizontal line {}", s1);
                                     // println!("              S2 Vertical line {}", s2);
                                     // println!("                  INTERSECTION: {},{}", x, y);                        
-                                    // distance to intersection
-                                    // Get the total distance before this segment
+                                    
                                     let mut idist = s1.total_distance + s2.total_distance;
                                     // println!(" --- total distance: {}", idist);
-                                    // println!(" --- s2: y1:{} y2:{} y:{}", s2.y1, s2.y2, y);
-                                    // Now add to the intersection only                                   
+                                    // println!(" --- s2: y1:{} y2:{} y:{}", s2.y1, s2.y2, y);                                                                  
                                     let d2 = match s2.direction {
                                         Direction::Up => (s2.y1 - y).abs(),
                                         Direction::Down => (s2.y2 - y).abs(),
