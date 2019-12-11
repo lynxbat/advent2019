@@ -1,9 +1,4 @@
 // Advent of Code - Day 4 part 1
-use std::io::prelude::*;
-// use std::io::BufReader;
-// use std::fs::File;
-// use std::string::String;
-// use std::fmt;
 
 fn main() {
     let range_start = 138241;
