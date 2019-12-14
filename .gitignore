@@ -11,6 +11,7 @@ Cargo.lock
 main
 # VCode stuff
 launch.json
+tasks.json
 
 
 #Added by cargo
