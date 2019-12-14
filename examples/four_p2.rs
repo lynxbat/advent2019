@@ -30,7 +30,7 @@ fn has_double(num: i32) -> bool {
         nh.insert(c, x);        
         lcv.push(c);
     }
-    for (k, v) in nh {
+    for (_k, v) in nh {
         if v == 2 {
             return true;
         }

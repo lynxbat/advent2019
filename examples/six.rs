@@ -30,7 +30,7 @@ fn main() {
 
     // Walk a-list and count direct and indirect from each object as a parent.
     let mut count: u32 = 0;
-    for (p, c) in &obj {        
+    for (_p, c) in &obj {        
         if c.len() > 0 {
             count+=count_orbit(&c, &obj);
         };
